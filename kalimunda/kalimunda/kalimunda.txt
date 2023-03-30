@@ -1,0 +1,11 @@
+functiona;ities of the dawa app
+    functionalities
+    user registration
+    login and logout
+    index page
+    stock
+    sales report
+    stock listing > products
+    receipts
+
+    

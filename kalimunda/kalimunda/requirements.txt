@@ -1,0 +1,43 @@
+Analysis & Design
+=> This is done prior to the development of software
+
+functiona;ities of the dawa app
+    functionalities
+    user registration
+    login and logout
+    index page
+    stock
+    sales report
+    stock listing > products
+    receipts
+
+'''    
+modelling an object called products
+    product belongs to a category
+2. product name
+3. the total quantity recieved
+4. batch number
+5. issues quantity (sold so far) and quantity recieved
+6. unit Price
+
+'''
+
+'''
+modelling Sale
+sales belongs to a product and can also belong  to a category
+1. Item sold
+2. Quantity sold
+3. issued to / buyer
+4. Unit Proce
+5. Amount recieved
+'''
+
+'''
+modelling Category
+Injetcions
+Tablets
+Suppositories
+Capsules
+Implants
+Yopical medicine
+'''
