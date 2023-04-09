@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-# from django.contrib.auth import views as auth_views
+from django.urls import path, include
+from django.contrib.auth import views as auth_views
 
 # from dawa.views import index     # ==> if you use this import type, the partterns paths be like number 25
 from dawa import views             # ==> if you use this import type, the partterns paths be like number 26 or 27
@@ -23,17 +23,8 @@ from dawa import views             # ==> if you use this import type, the partte
 
 urlpatterns = [
     path('admin/', admin.site.urls),  
-    # path("index/", index, name ="index"), 
-    path("index/", views.index, name ="index"), 
-    path("home/", views.index, name ="home"), 
-    path('about/', views.about, name = 'about'),  
-    # path('', auth_views.LoginView.as_view(template_name='product/login.html'), name = 'login'),  
-    # path('', auth_views.LogoutView.as_view(template_name='product/logout.html'), name = 'logout'), 
-   
-   
-    # Url route to buy items
-    # on home we look at a url of the product_detail but focusing on the product_id of the product
-    # path('home/<int:product_id>', views.product_detail, name='product_detail'), 
-    # path('issue_item/<str:pk>', views.issue_item, name='issue_item'), 
-    # path('add_to_stock/<str:pk>', views.add_to_stock, name='add_to_stock'), 
+    # path('shafic/', admin.site.urls),  # adding in another user minus admin default user under admin, site urls
+
+    # if the url in browser isnt admin / shafic , go an application dawa and look for a file urls and load them too
+    path('', include('dawa.urls')),
 ]

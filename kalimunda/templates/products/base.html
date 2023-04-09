@@ -22,15 +22,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="nav navbar-nav ml-auto">
             {% if user.is_authenticated%}
-              <!-- <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="{% url 'home' %}">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'receipt'%}">RECEIPTS</a>
+                  <a class="nav-link" href="{% url 'home'%}">RECEIPTS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'all_sales'%}">ALL SALES</a>
-                </li> -->
+                  <a class="nav-link" href="{% url 'home'%}">ALL SALES</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'logout'%}">LOGOUT</a>
                 </li>
@@ -44,3 +44,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+

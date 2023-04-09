@@ -41,10 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions', # sessions of users helps keep track of users logins and logouts
     'django.contrib.messages', # messages
     'django.contrib.staticfiles', # for images, CSS
-    # 'crispy_forms',
-    'dawa', # my new created App of project
-    # 'crispy_bootstrap4'
-    'django_filters',
+    'crispy_forms',
+    'crispy_bootstrap4',
+    'dawa', # my new created App of project called Dawa
+    
+    # 'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuring crispy forms package with bootstrap4 version for better forms & UI
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Our sucessful login url route redirect the user to home template
+LOGIN_REDIRECT_URL = 'home'
+
+# Setting login URL redirect for users to login into the app
+LOGIN_URL = 'login'

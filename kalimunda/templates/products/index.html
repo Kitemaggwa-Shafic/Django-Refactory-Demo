@@ -33,10 +33,10 @@
         <td>{{product.itemName}}</td>
         <td>{{product.totalQuantity}}</td>
         <td>UGX{{product.unitPrice}}</td>
-        <!-- <td><a href="{% url 'product_detail' product.id %}">
+        <td><a href="{% url 'product_details' product.id %}">
             <input type="submit" value="BUY ITEM" class="btn btn-secondary btn" type="button"/>
             </a>
-        </td> -->
+        </td> 
       </tr>
     </tbody>
     {% endfor %}

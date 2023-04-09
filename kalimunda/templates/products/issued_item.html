@@ -1,0 +1,16 @@
+{% extends 'prodcuts/base.html'%}
+{% load crispy_forms_tags%}
+{% load static%}
+{% block content%}
+
+
+<div class="container">
+    <form method="post" action="">
+        <h1>ADD TO STOCK</h1>
+        {% csrf_token %}
+        {{form | crispy}}
+        <input type="submit" class="btn btn-secondary btn"  />
+    </form> 
+</div>
+
+{% endblock%}
